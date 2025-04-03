@@ -38,8 +38,6 @@ class Player:
         self.on_ground = False
 
     def handle_input(self, keys): #keyboard input
-        if keys[pygame.K_LEFT]:
-            self.x -= 5
         if keys[pygame.K_RIGHT]:
             self.x += 5
         if keys[pygame.K_SPACE] and self.on_ground:
